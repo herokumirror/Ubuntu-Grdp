@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: Creating User to Login
       run: |
-         sudo useradd -m Area69Lab && sudo adduser tejas sudo && echo 'Area69Lab:Area69Lab' 
+         sudo useradd -m Area69Lab && sudo adduser Area69Lab sudo && echo 'Area69Lab:Area69Lab' | sudo chpasswd
      
       # To Install different Environment replace their commands. by default it Install 'Ubuntu'
       
